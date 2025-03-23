@@ -1,241 +1,221 @@
 import {
+  AmbitLogo,
+  BarepapersLogo,
+  BimLogo,
+  CDGOLogo,
   ClevertechLogo,
   ConsultlyLogo,
+  EvercastLogo,
+  Howdy,
+  JarockiMeLogo,
   JojoMobileLogo,
+  Minimal,
+  MobileVikingsLogo,
   MonitoLogo,
   NSNLogo,
   ParabolLogo,
+  TastyCloudLogo,
+  YearProgressLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { WebIcon, GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { link } from "fs";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Kyle Ho",
+  initials: "KH",
+  location: "Sydney, Australia, AEST",
+  locationLink: "https://www.google.com/maps/place/Sydney",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
-  summary: (
-    <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
-    </>
-  ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+    "Software Engineer | Cybersecurity | Project Manager",
+  summary:
+    "As a Full Stack Engineer & Cybersecurity Student, I blend a deep technical skill set with a passion for secure, scalable solutions. With a background as an IT Project Manager and a journalist, I bring a unique perspective to every project - whether it's crafting robust code, designing secure infrastructures, or leading teams to deliver innovative technology solutions.",
+  avatarUrl: "https://avatars.githubusercontent.com/u/55761838?v=4",
+  personalWebsiteUrl: "https://kyleho.net",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "hello@kyleho.net",
+    tel: "+61402822250",
     social: [
       {
+        name: "Website",
+        url: "https://kyleho.net",
+        icon: WebIcon,
+      },
+      {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/kylewtho",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/kylewtho",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://x.com/kylewtho",
         icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "University of New South Wales",
+      degree: "MSc Information Technology / Cyber Security Engineering",
+      start: "09/2023",
+      end: "12/2025",
+      description: "Distiction; Elected as Student Representative",
+    },
+    {
+      school: "Goldsmiths, University of London",
+      degree: "MA Promotional Media: Public Relations, Advertising and Marketing",
+      start: "09/2018",
+      end: "09/2019",
+      description: "Graduate with Merit; Student Representative",
+    },
+    {
+      school: "Fu Jen Catholic University",
+      degree: "BA Journalism & Communication Studies / BA Japanese Langauge & Literature",
+      start: "09/2013",
+      end: "07/2017",
+      description: "Academic Excellence Rewards & Scholarships; SA Director & Course Representative",
+    },
+  ],
+  volunteering: [
+    {
+      organisation: "Rural Fire Service (Schofields Rural Fire Brigade)",
+      start: "02/2025",
+      end: "Present",
+    },
+    {
+      organisation: "St John Ambulance NSW - Responder",
+      start: "02/2024",
+      end: "Present",
+    },
+    {
+      organisation: "UNSW/MHFA Australia - Mental Health First Aider",
+      start: "07/2024",
+      end: "Present",
+    },
+    {
+      organisation: "UNSW Student Health Advisory Committee",
+      start: "03/2024",
+      end: "Present",
+    },
+    {
+      organisation: "UNSW Student Health & Wellbeing - Senior Amabassador",
+      start: "02/2024",
+      end: "Present",
+    },
+    {
+      organisation: "UNSW/Computer Science & Engineering Society - Mentor",
+      start: "02/2024",
+      end: "Present",
     },
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      logo: ConsultlyLogo,
-      start: "2024",
-      end: null,
-      description: (
-        <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
-      description: (
-        <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description: (
-        <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
+      company: "University of New South Wales",
+      link: "https://www.unsw.edu.au",
+      badges: ["Casual", "Scheduled"],
+      title: "Casual Academic - Project Management",
+      start: "Starting 09/2025",
       description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
+        "Scheduled role demonstrating for GSOE9820 Engineering Project Management (Term 3)",
+    },
+    {
+      company: "University of New South Wales",
+      link: "https://www.unsw.edu.au",
+      badges: ["Casual"],
+      title: "Workshop Assistant / Facilitator",
+      start: "02/2024",
+      end: "Present",
+      description:
+        "Hosting and Assisting in workshops for students in students' development and wellbeing",
+    },
+    {
+      company: "Ying Ju Technology",
+      link: "http://in853.net",
+      badges: ["Full-time"],
+      title: "IT Project Manager",
+      start: "08/2021",
+      end: "08/2023",
+      description:
+        "Managed development projects including ERP system, web design and game development; Functioned as the primary coordinator, fostering collaboration among teams and clients; Developed and implemented project plans and strategies for SaaS products",
+    },
+    {
+      company: "November Games",
+      badges: ["Contract", "Remote"],
+      title: "Project Operation Specialist",
+      start: "09/2021",
+      end: "01/2022",
+      description:
+        "Organised and implemented campaigns to engage and retain players from global markets; Analysed and reported on statistical performance metrics to enhance promotional strategies",
+    },
+    {
+      company: "Galaxy Entertainment Group",
+      link: "https://www.galaxyentertainment.com",
+      badges: ["Full-time"],
+      title: "Editor, Media Relations - Public Relations",
+      start: "02/2020",
+      end: "08/2021",
+      description:
+        "Wrote bilingual PR materials, incl. press releases, advertorials and executive speeches; Liaised with local/overseas media, PR agencies and company subsidiaries",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
+    "JavaScript",
     "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
+    "React/Next.js/Remix",
     "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "Python",
+    "Java",
+    "C",
+    "PHP",
+    "SQL",
+    "Burp Suite",
+    "Wireshark",
+    "Nmap",
+    "Snort",
+    "Cloud Computing (AWS, GCP)",
+    "Agile/Scrum",
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
-      description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Consultly",
+      title: "Security Testing Project",
       techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
+        "Industry Project",
+        "Team Leaer",
+        "Penetration Testing",
+        "Vulnerability Assessment",
+        "Report Writing",
       ],
-      description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      logo: ConsultlyLogo,
+      description: "A comprehensive security testing project for Pearler, an Australian startup, for COMP6841 Extended Security Engineering & Cyber Security. Achieved excellent result (93/100)",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "pearler.com",
+        href: "https://pearler.com/",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      logo: MonitoLogo,
-      link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
-      },
+      title: "Professional Project",
+      techStack: [
+        "Professional Development",
+        "AI",
+        "Environment Sustainability",
+        "Report Writing",
+        "Public Speaking",
+      ],
+      description: "An analysis focusing on AI and Environmental Sustainability with UNSW Finance System team. Interviewed industry professionals and conducted research to provide insights",
+    },
+    {
+      title: "Industry Research Project",
+      techStack: [
+        "Industry Project",
+        "Team Leaer",
+        "Strategic Research",
+        "Market Analysis",
+        "Report Writing",
+      ],
+      description: "A strategic market research project for an Australian client in tourism industry. Conducted research, analysed data and provided recommendations",
     },
   ],
 } as const;
